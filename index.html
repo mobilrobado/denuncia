@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denunciar Robo de Teléfono</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Si tienes un archivo CSS -->
+</head>
+<body>
+    <h1>Denunciar Robo de Teléfono</h1>
+    
+    <form id="imei-form">
+        <label for="imei">Introduce el IMEI (15 dígitos):</label>
+        <input type="text" id="imei" required>
+        
+        <label for="email">Tu correo electrónico:</label>
+        <input type="email" id="email" required>
+        
+        <label for="descripcion">Descripción del robo:</label>
+        <textarea id="descripcion" rows="4"></textarea>
+        
+        <button type="submit">Enviar Denuncia</button>
+    </form>
+    
+    <div id="message"></div>
+    
+    <!-- Nueva sección "¿Cómo funciona?" -->
+    <section id="como-funciona">
+        <h2>¿Cómo funciona?</h2>
+        <p>
+            Este servicio te permite denunciar el robo de tu teléfono móvil de forma sencilla y rápida. 
+            A continuación, se explica el proceso:
+        </p>
+        <ol>
+            <li>
+                <strong>Ingresa el IMEI:</strong> Cada teléfono tiene un número de identificación único llamado IMEI. 
+                Asegúrate de ingresarlo correctamente (15 dígitos).
+            </li>
+            <li>
+                <strong>Proporciona tu correo electrónico:</strong> Indica un correo electrónico de contacto donde podamos enviarte 
+                la confirmación de la denuncia.
+            </li>
+            <li>
+                <strong>Descripción:</strong> Puedes añadir una breve descripción sobre el robo, como la fecha y el lugar.
+            </li>
+            <li>
+                <strong>Envío de denuncia:</strong> Una vez que envíes el formulario, se enviará un correo a las operadoras móviles 
+                notificando el robo. Esto permitirá que tu teléfono sea incluido en una lista negra para evitar su uso.
+            </li>
+            <li>
+                <strong>Confirma el envío:</strong> Recibirás un mensaje de confirmación en la página indicando que tu solicitud ha 
+                sido enviada correctamente.
+            </li>
+        </ol>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
