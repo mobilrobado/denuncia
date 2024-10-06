@@ -3,58 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denunciar Robo de Teléfono</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Si tienes un archivo CSS -->
+    <title>Denuncia de Móviles Robados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("03IW_-nbOgjPnOnM9");
+        })();
+    </script>
 </head>
 <body>
-    <h1>Denunciar Robo de Teléfono</h1>
-    
-    <form id="imei-form">
-        <label for="imei">Introduce el IMEI (15 dígitos):</label>
-        <input type="text" id="imei" required>
+    <div class="container">
+        <h1>Denunciar un Móvil Robado</h1>
+        <form id="denuncia-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="imei">IMEI:</label>
+            <input type="text" id="imei" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Enviar Denuncia</button>
+            <p id="message"></p>
+        </form>
         
-        <label for="email">Tu correo electrónico:</label>
-        <input type="email" id="email" required>
+        <!-- Código de Google AdSense -->
+        <div class="anuncio">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8817588777584907" 
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8817588777584907"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
         
-        <label for="descripcion">Descripción del robo:</label>
-        <textarea id="descripcion" rows="4"></textarea>
-        
-        <button type="submit">Enviar Denuncia</button>
-    </form>
-    
-    <div id="message"></div>
-    
-    <!-- Nueva sección "¿Cómo funciona?" -->
-    <section id="como-funciona">
-        <h2>¿Cómo funciona?</h2>
-        <p>
-            Este servicio te permite denunciar el robo de tu teléfono móvil de forma sencilla y rápida. 
-            A continuación, se explica el proceso:
-        </p>
-        <ol>
-            <li>
-                <strong>Ingresa el IMEI:</strong> Cada teléfono tiene un número de identificación único llamado IMEI. 
-                Asegúrate de ingresarlo correctamente (15 dígitos).
-            </li>
-            <li>
-                <strong>Proporciona tu correo electrónico:</strong> Indica un correo electrónico de contacto donde podamos enviarte 
-                la confirmación de la denuncia.
-            </li>
-            <li>
-                <strong>Descripción:</strong> Puedes añadir una breve descripción sobre el robo, como la fecha y el lugar.
-            </li>
-            <li>
-                <strong>Envío de denuncia:</strong> Una vez que envíes el formulario, se enviará un correo a las operadoras móviles 
-                notificando el robo. Esto permitirá que tu teléfono sea incluido en una lista negra para evitar su uso.
-            </li>
-            <li>
-                <strong>Confirma el envío:</strong> Recibirás un mensaje de confirmación en la página indicando que tu solicitud ha 
-                sido enviada correctamente.
-            </li>
-        </ol>
-    </section>
-
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <h2>¿Cómo Funciona?</h2>
+        <div class="como-funciona">
+            <p>Este servicio permite a los usuarios denunciar el robo de teléfonos móviles mediante el ingreso del IMEI. Una vez enviada la denuncia, se notificará a las operadoras para que bloqueen el dispositivo.</p>
+            <ol>
+                <li>Ingresa tu nombre, el IMEI del dispositivo y tu correo electrónico.</li>
+                <li>Haz clic en "Enviar Denuncia".</li>
+                <li>Recibirás un correo electrónico confirmando que tu denuncia ha sido enviada.</li>
+                <li>Las operadoras serán notificadas para que bloqueen el dispositivo.</li>
+            </ol>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
