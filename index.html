@@ -3,36 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denunciar Teléfono Robado - Tu Solución Rápida</title>
-    <meta name="description" content="Denuncia tu teléfono robado fácilmente con nuestra aplicación. Protege tu información y ayuda a las autoridades a recuperar tu dispositivo.">
-    <meta name="keywords" content="denunciar teléfono robado, reportar móvil, recuperar teléfono, aplicación de denuncia, robo de móviles, seguridad móvil">
+    <meta name="description" content="Denunciar teléfono robado. Utiliza nuestro servicio para informar a las operadoras sobre el robo de tu dispositivo.">
+    <meta name="keywords" content="denunciar, teléfono robado, IMEI, denuncia, robo, servicio, operadoras">
+    <title>Denunciar Teléfono Robado</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8817588777584907" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Cómo Denunciar un Teléfono Robado</h1>
-        <div class="como-funciona">
-            <h2>¿Cómo Funciona?</h2>
-            <p>Nuestra aplicación te permite <strong>denunciar teléfonos robados</strong> de manera rápida y sencilla. Simplemente ingresa el IMEI de tu dispositivo, completa el formulario y nosotros nos encargaremos de notificar a las operadoras correspondientes para que tu móvil quede en la lista negra.</p>
-            <p>Proteger tu información y ayudar a las autoridades es nuestra misión. Si has sido víctima de un robo, no dudes en utilizar nuestra aplicación.</p>
-        </div>
-
-        <div class="formulario">
-            <h2>Formulario de Denuncia</h2>
-            <form id="denunciaForm">
-                <label for="imei">Ingrese el IMEI de su teléfono robado:</label>
-                <input type="text" id="imei" name="imei" required placeholder="Ejemplo: 123456789012345">
-                <label for="email">Ingrese su correo electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="su-email@ejemplo.com">
-                <label for="descripcion">Descripción del incidente:</label>
-                <textarea id="descripcion" name="descripcion" required placeholder="Describa brevemente el incidente"></textarea>
-                <input type="submit" value="Enviar Denuncia">
-            </form>
-            <p id="mensaje" class="mensaje"></p>
-        </div>
+    <h1>Denunciar Teléfono Robado</h1>
+    <div>
+        <form id="denunciaForm">
+            <input type="text" id="imei" placeholder="IMEI" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="descripcion" placeholder="Descripción" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje"></p>
     </div>
-
-    <script src="app.js"></script>
+    <div id="como-funciona">
+        <h2>¿Cómo funciona?</h2>
+        <p>Cuando reportas un teléfono robado, nuestra aplicación envía automáticamente un correo electrónico a las principales operadoras para que bloqueen el IMEI de tu dispositivo.</p>
+    </div>
+    <script src="app.js"></script> <!-- Mueve el script aquí -->
 </body>
 </html>
