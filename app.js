@@ -1,10 +1,10 @@
-document.getElementById("imei-form").addEventListener("submit", function(event) {
+document.getElementById("denunciaForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
     const imei = document.getElementById("imei").value;
     const email = document.getElementById("email").value;
     const descripcion = document.getElementById("descripcion").value;
-    const message = document.getElementById("message");
+    const message = document.getElementById("mensaje"); // Asegúrate de que este ID coincide con tu HTML
 
     // Validar el IMEI (debe tener 15 dígitos)
     if (!/^\d{15}$/.test(imei)) {
@@ -67,5 +67,5 @@ document.getElementById("imei-form").addEventListener("submit", function(event) 
     });
 
     // Resetear el formulario
-    document.getElementById("imei-form").reset();
+    document.getElementById("denunciaForm").reset();
 });
