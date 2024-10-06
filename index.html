@@ -3,54 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denuncia de Móviles Robados</title>
+    <title>Denunciar Teléfono Robado - Tu Solución Rápida</title>
+    <meta name="description" content="Denuncia tu teléfono robado fácilmente con nuestra aplicación. Protege tu información y ayuda a las autoridades a recuperar tu dispositivo.">
+    <meta name="keywords" content="denunciar teléfono robado, reportar móvil, recuperar teléfono, aplicación de denuncia, robo de móviles, seguridad móvil">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-            emailjs.init("03IW_-nbOgjPnOnM9");
-        })();
-    </script>
 </head>
 <body>
     <div class="container">
-        <h1>Denunciar un Móvil Robado</h1>
-        <form id="denuncia-form">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
-            <label for="imei">IMEI:</label>
-            <input type="text" id="imei" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <button type="submit">Enviar Denuncia</button>
-            <p id="message"></p>
-        </form>
-        
-        <!-- Código de Google AdSense -->
-        <div class="anuncio">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8817588777584907" 
-                    crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8817588777584907"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-        
-        <h2>¿Cómo Funciona?</h2>
+        <h1>Cómo Denunciar un Teléfono Robado</h1>
         <div class="como-funciona">
-            <p>Este servicio permite a los usuarios denunciar el robo de teléfonos móviles mediante el ingreso del IMEI. Una vez enviada la denuncia, se notificará a las operadoras para que bloqueen el dispositivo.</p>
-            <ol>
-                <li>Ingresa tu nombre, el IMEI del dispositivo y tu correo electrónico.</li>
-                <li>Haz clic en "Enviar Denuncia".</li>
-                <li>Recibirás un correo electrónico confirmando que tu denuncia ha sido enviada.</li>
-                <li>Las operadoras serán notificadas para que bloqueen el dispositivo.</li>
-            </ol>
+            <h2>¿Cómo Funciona?</h2>
+            <p>Nuestra aplicación te permite <strong>denunciar teléfonos robados</strong> de manera rápida y sencilla. Simplemente ingresa el IMEI de tu dispositivo, completa el formulario y nosotros nos encargaremos de notificar a las operadoras correspondientes para que tu móvil quede en la lista negra.</p>
+            <p>Proteger tu información y ayudar a las autoridades es nuestra misión. Si has sido víctima de un robo, no dudes en utilizar nuestra aplicación.</p>
+        </div>
+
+        <div class="formulario">
+            <h2>Formulario de Denuncia</h2>
+            <form id="denunciaForm">
+                <label for="imei">Ingrese el IMEI de su teléfono robado:</label>
+                <input type="text" id="imei" name="imei" required placeholder="Ejemplo: 123456789012345">
+                <label for="email">Ingrese su correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="su-email@ejemplo.com">
+                <input type="submit" value="Enviar Denuncia">
+            </form>
+            <p id="mensaje" class="mensaje"></p>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
